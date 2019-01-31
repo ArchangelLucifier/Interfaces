@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>921</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="ResultsLayout">
+     <item>
+      <widget class="QGroupBox" name="SuccessAccounts">
+       <property name="title">
+        <string>Success Accounts</string>
+       </property>
+       <widget class="QTextEdit" name="SuccessAccountsFields">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>441</width>
+          <height>151</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="ErrorProxies">
+       <property name="title">
+        <string>Error Proxies</string>
+       </property>
+       <widget class="QTextEdit" name="ErrorProxiesField">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>441</width>
+          <height>151</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="Start">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>921</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>9</y>
+      <width>921</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="SettingsLayout">
+     <item>
+      <widget class="QGroupBox" name="Proxies">
+       <property name="title">
+        <string>Proxies</string>
+       </property>
+       <widget class="QTextEdit" name="ProxiesField">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>33</y>
+          <width>901</width>
+          <height>111</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="StartIntervalLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Start interval:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="StartIntervalField">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>150</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="AccountsCountLabel">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>160</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Count accounts: </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="CountAccountsField">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>150</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="RegistrationIntervalFromField">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>150</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="RegistrationIntervalFromLabel">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>160</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Interval From:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="RegistrationIntervalToLabel">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>160</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Interval To: </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="RegistrationIntervalToField">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>150</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="Emails">
+       <property name="title">
+        <string>Emails</string>
+       </property>
+       <widget class="QTextEdit" name="EmailsField">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>33</y>
+          <width>901</width>
+          <height>121</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="GenerateEmails">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>160</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>With emails</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>ProxiesField</tabstop>
+  <tabstop>StartIntervalField</tabstop>
+  <tabstop>CountAccountsField</tabstop>
+  <tabstop>RegistrationIntervalFromField</tabstop>
+  <tabstop>RegistrationIntervalToField</tabstop>
+  <tabstop>SuccessAccountsFields</tabstop>
+  <tabstop>ErrorProxiesField</tabstop>
+  <tabstop>Start</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
